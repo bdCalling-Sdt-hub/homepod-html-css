@@ -6,7 +6,11 @@ body {
   padding: 0;
 }
 
-/* Navbar CSS Code  */
+/*
+---------------
+Navbar section
+---------------
+*/
 
 .navbar {
   display: flex;
@@ -58,7 +62,12 @@ body {
   cursor: pointer;
 }
 
-/* Fullscreen Container */
+/*
+---------------
+Fullscreen Container
+---------------
+*/
+
 .fullscreen {
   display: flex;
   justify-content: center;
@@ -80,7 +89,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   width: 100%;
 }
 
@@ -91,7 +99,11 @@ body {
   width: 100%;
 }
 
-/* Profound sound section  */
+/*
+---------------
+Profound sound section
+---------------
+*/
 
 .background-section {
   background-image: url("../assets/hero_homepod.jpg"); /* Path to your background image */
@@ -105,7 +117,8 @@ body {
   align-items: center;
   text-align: center;
   color: white; /* Text color for contrast */
-  padding: 20px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 .background-section h3 {
@@ -119,6 +132,69 @@ body {
   margin: 10px 0 0;
   color: gray;
   padding: 0;
+}
+
+/*
+---------------
+High-fidelity audio section
+---------------
+*/
+
+.high-fidelity-section {
+  width: 70%;
+  margin: 0 auto; /* Center the div */
+}
+
+.high-fidelity-section p:first-child {
+  font-size: 2rem; /* Medium text size for the first paragraph */
+}
+
+.high-fidelity-section p:first-child::after {
+  content: "";
+  display: block;
+  width: 50px; /* Adjust the width of the line */
+  height: 2px; /* Adjust the height of the line */
+  background-color: black; /* Color of the line */
+  margin: 10px 0; /* Adjust the spacing */
+}
+
+.high-fidelity-section h2 {
+  font-size: 7rem;
+  margin-right: 160px;
+}
+
+.high-fidelity-section p {
+  font-size: 2rem; /* Medium text size for other paragraphs */
+  line-height: 1.5; /* Adjust line height for better readability */
+  margin-right: 360px;
+}
+
+/*
+---------------
+ homePod details section  
+--------------- 
+ */
+
+.homepod-details-container {
+  padding-top: 120px;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; /* Align items at the start of the flex container */
+}
+
+.homepod-image img {
+  height: 545px !important;
+  width: 452px !important;
+  height: auto;
+  margin: 0%;
+}
+
+.homepod-text {
+  flex: 0 0 50%; /* Take up 50% of the width */
+  padding-left: 20px; /* Adjust as needed for spacing between image and text */
 }
 
 /* Zoom Animation */
@@ -165,6 +241,11 @@ body {
     font-size: 4rem;
   }
 
+  /* Features Section */
+  .features {
+    padding: 0px;
+    width: 100%;
+  }
   .features p {
     font-size: 2rem;
   }
@@ -172,11 +253,47 @@ body {
   /* profound section  */
 
   .background-section {
+    margin-top: 200px;
     width: 100vw;
+    padding: 0px;
   }
   .background-section h3 {
     font-size: 5rem; /* Large text size */
     margin: 0;
     padding: 0;
+  }
+
+  /* High-fidelity audio section */
+  .high-fidelity-section {
+    margin-top: 200px;
+    width: 90%;
+  }
+
+  .high-fidelity-section h2 {
+    font-size: 3rem;
+    margin-right: 0px;
+  }
+
+  .high-fidelity-section p {
+    margin-right: 0px;
+  }
+
+  /*
+---------------
+ homePod details section  
+--------------- 
+ */
+
+  .homepod-details-container {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .homepod-image img {
+    height: 445px !important;
+    width: 352px !important;
+    height: auto;
+    margin: 0%;
   }
 }
