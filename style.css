@@ -279,13 +279,59 @@ dynamic as a duo
   width: 100%; /* Set the width to 70% */
   background-size: cover;
   height: auto; /* Allow the height to adjust proportionally */
-  border: 20px solid transparent; /* Set initial transparent border */
   border-radius: 30px;
 }
 .shark-hr {
   width: 50%;
   opacity: 0.3;
 }
+
+/*
+-------------
+image template section
+-------------
+
+*/
+
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: center; /* Center the grid items horizontally */
+  align-items: center;
+  justify-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 
+-------------
+All your devices section
+--------------
+  */
+
+.device-background-section {
+  background-image: url("./assets/hand.jpg"); /* Path to your background image */
+  background-position: right;
+  background-repeat: no-repeat;
+  /* height: 100vh; Full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white; /* Text color for contrast */
+  margin-top: 100px;
+}
+
+.device {
+  margin-top: 900px;
+}
+
 /*
 -------------
 Image slider 
@@ -430,5 +476,38 @@ Image slider
     font-size: 15px;
     width: 80%;
     margin: auto;
+  }
+  /*
+-------------
+image template section
+-------------
+
+*/
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .container img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* 
+-------------
+All your devices section
+--------------
+  */
+
+  .device-background-section {
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .device {
+    margin-top: 250px;
   }
 }
