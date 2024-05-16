@@ -26,6 +26,7 @@ Navbar section
 
 .nav-hr {
   width: 70%;
+  opacity: 0.3;
 }
 
 .navbar-title {
@@ -231,6 +232,81 @@ High-fidelity audio section
   width: 30%;
 }
 
+/*
+ -----------------
+ slider image section
+ -----------------
+ */
+
+.slider {
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.flex-container {
+  display: flex;
+  width: 300%;
+  animation: slide infinite; /* Adjust animation duration as needed */
+}
+
+/* 
+-------------
+dynamic as a duo
+--------------
+  */
+
+.apple-background-section {
+  background-image: url("./assets/apple.jpg"); /* Path to your background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* Text color for contrast */
+  margin-top: 100px;
+}
+
+.apple {
+  padding-top: 400px;
+}
+
+.shark-bg {
+  display: block;
+  margin: 0 auto;
+  width: 100%; /* Set the width to 70% */
+  background-size: cover;
+  height: auto; /* Allow the height to adjust proportionally */
+  border: 20px solid transparent; /* Set initial transparent border */
+  border-radius: 30px;
+}
+.shark-hr {
+  width: 50%;
+  opacity: 0.3;
+}
+/*
+-------------
+Image slider 
+-------------
+
+*/
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.flex-container img {
+  flex: 0 0 auto; /* Reset flex properties */
+  width: auto; /* Ensure images take up full width of flex container */
+  max-height: 200px; /* Adjust maximum height as needed */
+  height: auto; /* Maintain aspect ratio */
+}
 /* Zoom Animation */
 @keyframes zoom-animation {
   0% {
