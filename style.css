@@ -177,6 +177,7 @@ High-fidelity audio section
 
 .homepod-details-container {
   padding-top: 120px;
+  padding-bottom: 120px;
   width: 70%;
   margin: auto;
   display: flex;
@@ -195,6 +196,39 @@ High-fidelity audio section
 .homepod-text {
   flex: 0 0 50%; /* Take up 50% of the width */
   padding-left: 20px; /* Adjust as needed for spacing between image and text */
+}
+
+/*
+---------------
+ Sound all around section  
+--------------- 
+ */
+
+.sound-bg {
+  display: block;
+  margin: 0 auto;
+  width: 70%; /* Set the width to 70% */
+  height: auto; /* Allow the height to adjust proportionally */
+  border: 20px solid transparent; /* Set initial transparent border */
+  border-radius: 30px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 0px 40px;
+}
+.content-container h3 {
+  width: 20%;
+  font-size: 30px;
+}
+.content-container p {
+  color: gray;
+  padding-top: 5px;
+  font-size: 25px;
+  width: 30%;
 }
 
 /* Zoom Animation */
@@ -295,5 +329,30 @@ High-fidelity audio section
     width: 352px !important;
     height: auto;
     margin: 0%;
+  }
+
+  /*
+---------------
+ Sound all around section  
+--------------- 
+ */
+
+  .sound-bg {
+    width: 100%;
+    border: 0px solid transparent;
+    border-radius: 0px;
+  }
+  .content-container {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  .content-container h3 {
+    width: 80%;
+    margin: auto;
+  }
+  .content-container p {
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
   }
 }
