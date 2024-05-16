@@ -81,7 +81,7 @@ Fullscreen Container
   font-size: 10rem; /* Example font size */
   text-align: center;
   margin: 0;
-  animation: zoom-animation 1s infinite; /* Apply animation */
+  animation: zoom-animation 2s infinite; /* Apply animation */
 }
 
 /* Features Section */
@@ -482,16 +482,138 @@ Image slider
   color: gray; /* Gray color for the description */
 }
 
-/* Zoom Animation */
+/*
+ ------------
+White Background part
+ ------------
+ */
+.white-section {
+  background-color: white;
+  margin-top: 120px;
+  color: black;
+  padding-bottom: 40px;
+}
+
+.ar {
+  background-color: #f5f5f7;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.circle-img {
+  margin-top: 40px;
+  width: 60px;
+  height: auto;
+}
+.ar-title {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1; /* Adjust line height to reduce the gap */
+}
+
+.ar-details {
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.4;
+  line-height: 1; /* Adjust line height to reduce the gap */
+}
+
+.music-details {
+  color: rgb(42, 134, 187);
+  border: none;
+  font-weight: bold;
+}
+.music {
+  background-color: #f5f5f7;
+  margin-top: 20px;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  display: flex;
+  justify-content: end;
+  gap: 180px;
+}
+
+/*
+ ------------
+Footer
+ ------------
+ */
+.tv {
+  padding-top: 20px;
+  font-size: small;
+  width: 55%;
+  margin: auto;
+}
+.footer {
+  background-color: white;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.footer-row {
+  display: flex;
+  justify-content: center; /* Distribute columns evenly */
+  align-items: start;
+  gap: 80px;
+  padding: 20px;
+}
+
+.footer-col h4 {
+  font-size: small;
+  font-weight: bolder;
+}
+
+.links {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+}
+
+.links li {
+  margin-bottom: 10px; /* Adjust spacing between list items */
+  font-size: smaller;
+}
+
+.links a {
+  text-decoration: none; /* Remove default underline */
+  color: #333; /* Set link color */
+}
+
+.footer-text {
+  font-size: smaller;
+  width: 70%;
+  margin: auto;
+}
+
+.p-foot {
+  display: flex;
+  gap: 10px;
+}
+.last-foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Adjust styles as needed */
+
+/*
+ ------------
+Zoom Animation
+ ------------
+ */
 @keyframes zoom-animation {
   0% {
     transform: scale(1);
+    opacity: 0.9;
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.6);
+    opacity: 0.6;
   }
   100% {
     transform: scale(1);
+    opacity: 0.9;
   }
 }
 
@@ -639,7 +761,9 @@ All your devices section
   .device {
     margin-top: 250px;
   }
-
+  .ar {
+    gap: 0px;
+  }
   /*
 -------------
 High IQ
@@ -708,5 +832,61 @@ Siri section
   .card-container {
     grid-template-columns: repeat(1, 1fr);
     width: 80%;
+  }
+
+  /*
+ ------------
+White Background part
+ ------------
+ */
+
+  .ar {
+    background-color: #f5f5f7;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .ar-img {
+    width: 70%;
+  }
+  .ar-title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1; /* Adjust line height to reduce the gap */
+  }
+
+  .ar-details {
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.4;
+    line-height: 1; /* Adjust line height to reduce the gap */
+  }
+
+  .music-details {
+    color: rgb(42, 134, 187);
+    border: none;
+    font-weight: bold;
+  }
+  .music {
+    background-color: #f5f5f7;
+    margin-top: 20px;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /*
+ ------------
+Footer
+ */
+
+  .footer-row {
+    display: flex;
+    flex-direction: column;
   }
 }
