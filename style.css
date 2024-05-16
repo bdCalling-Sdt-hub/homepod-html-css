@@ -334,6 +334,102 @@ All your devices section
 
 /*
 -------------
+High IQ
+-------------
+*/
+.high-bg {
+  display: block;
+  margin: 0 auto;
+  width: 60%; /* Set the width to 70% */
+  background-size: cover;
+  height: auto; /* Allow the height to adjust proportionally */
+  border-radius: 30px;
+}
+
+.high-iq {
+  width: 70%;
+  margin: auto;
+}
+.high-iq-p {
+  font-size: 40px;
+  margin-left: 200px;
+}
+
+.high-text {
+  font-size: 80px;
+  width: 70%;
+  margin: auto;
+  font-weight: bold;
+}
+
+.high-text-p2 {
+  font-size: 30px;
+  margin-left: 200px;
+  font-weight: 800;
+  color: #d1cfcf;
+}
+
+/*
+-------------
+Siri section
+-------------
+*/
+
+.siri-container {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: -40px;
+}
+
+.siri-container img {
+  max-width: 100px; /* Adjust the max width of the image as needed */
+  height: auto;
+  margin-right: 10px; /* Adjust the spacing between the image and text */
+}
+
+.siri-container h2 {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.siri-container h2 span {
+  background: linear-gradient(
+    90deg,
+    #e068eb,
+    #3ea7e4
+  ); /* Gradient text color */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.siri-p {
+  padding-top: 40px;
+  opacity: 0.5;
+  width: 50%;
+  margin: auto;
+  font-size: 30px;
+}
+
+.hey-siri {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.hey-siri span {
+  background: linear-gradient(90deg, #e068eb, #3ea7e4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*
+-------------
 Image slider 
 -------------
 
@@ -353,6 +449,39 @@ Image slider
   max-height: 200px; /* Adjust maximum height as needed */
   height: auto; /* Maintain aspect ratio */
 }
+
+/*
+ ------------
+ Card  
+ ------------
+ */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 20px;
+}
+
+.card img {
+  width: 30%; /* Adjust the width of the image to fill the container */
+  height: auto; /* Maintain the aspect ratio */
+  margin-bottom: 10px; /* Adjust the margin at the bottom of the image */
+}
+
+.card h2 {
+  font-weight: bold; /* Make the title bold */
+}
+
+.card p {
+  color: gray; /* Gray color for the description */
+}
+
 /* Zoom Animation */
 @keyframes zoom-animation {
   0% {
@@ -509,5 +638,75 @@ All your devices section
   }
   .device {
     margin-top: 250px;
+  }
+
+  /*
+-------------
+High IQ
+-------------
+*/
+  .high-bg {
+    width: 100%;
+    margin-top: 300px;
+  }
+
+  .high-iq {
+    width: 100%;
+    margin: auto;
+  }
+
+  .high-iq-p {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  .high-text {
+    font-size: 40px;
+    width: 100%;
+    margin: auto;
+    font-weight: bold;
+  }
+
+  .high-text-p2 {
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: 800;
+    color: #d1cfcf;
+  }
+
+  /*
+-------------
+Siri section
+-------------
+*/
+
+  .siri-container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: -20px;
+  }
+
+  .siri-container img {
+    max-width: 100px; /* Adjust the max width of the image as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust the spacing between the image and text */
+  }
+
+  .siri-container h2 {
+    font-size: 20px;
+  }
+
+  /*
+ ------------
+ Card  
+ ------------
+ */
+
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
   }
 }
