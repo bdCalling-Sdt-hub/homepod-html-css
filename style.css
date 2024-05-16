@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar CSS Code  */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #333; */
+  padding: 10px 20px;
+  width: 70%;
+  margin: auto;
+  color: white;
+  position: relative;
+}
+
+.nav-hr {
+  width: 70%;
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0 10px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background-color: #575757;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Fullscreen Container */
+.fullscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 100% of the viewport height */
+  color: white; /* Example text color */
+}
+
+.fullscreen h1 {
+  font-size: 10rem; /* Example font size */
+  text-align: center;
+  margin: 0;
+  animation: zoom-animation 1s infinite; /* Apply animation */
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.features p {
+  font-size: 4rem; /* Larger font size */
+  text-align: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+/* Profound sound section  */
+
+.background-section {
+  background-image: url("../assets/hero_homepod.jpg"); /* Path to your background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* Text color for contrast */
+  padding: 20px;
+}
+
+.background-section h3 {
+  font-size: 8rem; /* Large text size */
+  margin: 0;
+  padding: 0;
+}
+
+.background-section p {
+  font-size: 1.5rem; /* Slightly smaller text size */
+  margin: 10px 0 0;
+  color: gray;
+  padding: 0;
+}
+
+/* Zoom Animation */
+@keyframes zoom-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust as needed based on your navbar height */
+    left: 0;
+    background-color: #333;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links li {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* FullScreen  */
+
+  .fullscreen h1 {
+    font-size: 4rem;
+  }
+
+  .features p {
+    font-size: 2rem;
+  }
+
+  /* profound section  */
+
+  .background-section {
+    width: 100vw;
+  }
+  .background-section h3 {
+    font-size: 5rem; /* Large text size */
+    margin: 0;
+    padding: 0;
+  }
+}
