@@ -835,10 +835,10 @@ Siri section
   }
 
   /*
- ------------
+------------
 White Background part
- ------------
- */
+------------
+*/
 
   .ar {
     background-color: #f5f5f7;
@@ -881,9 +881,10 @@ White Background part
   }
 
   /*
- ------------
+------------
 Footer
- */
+------------
+*/
 
   .footer-row {
     display: flex;
