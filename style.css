@@ -107,7 +107,7 @@ Profound sound section
 */
 
 .background-section {
-  background-image: url("../assets/hero_homepod.jpg"); /* Path to your background image */
+  background-image: url("./assets/hero_homepod.jpg"); /* Path to your background image */
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
