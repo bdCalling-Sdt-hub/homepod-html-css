@@ -665,8 +665,11 @@ which homePod
 }
 
 .accessories-card {
-  border: 5px solid rgba(53, 103, 172, 0.2);
+  background-color: #fafafa;
   border-radius: 10px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
