@@ -363,8 +363,10 @@ High IQ
 }
 
 .high-text-p2 {
+  padding-top: 20px;
   font-size: 30px;
-  margin-left: 200px;
+  width: 70%;
+  margin: auto;
   font-weight: 800;
   color: #d1cfcf;
 }
@@ -392,7 +394,7 @@ Siri section
 
 .siri-container h2 {
   display: flex;
-  align-items: center;
+  align-items: start;
   font-size: 40px;
   font-weight: bold;
 }
@@ -406,6 +408,7 @@ Siri section
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-right: 5px;
 }
 
 .siri-p {
@@ -531,8 +534,9 @@ White Background part
   padding-top: 140px;
   padding-bottom: 140px;
   display: flex;
-  justify-content: end;
-  gap: 180px;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
 }
 .music-text {
   font-size: 25px;
@@ -631,6 +635,7 @@ which homePod
 }
 .other-card {
   display: flex;
+  border: "1px solid gray";
   justify-content: center;
   align-items: flex-start;
   width: 200px;
@@ -648,19 +653,24 @@ which homePod
 /* accessories  */
 
 .accessories {
+  background-color: white;
   margin-top: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   margin-bottom: 60px;
 }
 .accessories-img {
-  height: 320px;
+  height: 220px;
   background-size: cover;
 }
 
 .accessories-card {
+  border: 5px solid rgba(53, 103, 172, 0.2);
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 450px;
   text-align: center;
   line-height: 1.5;
 }
@@ -743,6 +753,12 @@ Footer
 }
 
 /* Adjust styles as needed */
+
+/*
+---------------
+Mobile Devices Responsive
+---------------
+*/
 
 @media (max-width: 768px) {
   .navbar-links {
@@ -889,6 +905,7 @@ All your devices section
     margin-top: 250px;
   }
   .ar {
+    padding-left: 20px;
     gap: 0px;
   }
   /*
@@ -913,16 +930,16 @@ High IQ
 
   .high-text {
     font-size: 40px;
-    width: 100%;
+    width: 95%;
+    padding-left: 20px;
     margin: auto;
     font-weight: bold;
   }
 
   .high-text-p2 {
-    font-size: 30px;
-    margin-left: 20px;
-    font-weight: 800;
-    color: #d1cfcf;
+    font-size: 25px;
+    padding-bottom: 30px;
+    width: 90%;
   }
 
   /*
@@ -934,8 +951,9 @@ Siri section
   .siri-container {
     display: flex;
     width: 100%;
+    padding-left: 20px;
     margin: auto;
-    align-items: center;
+    align-items: start;
     justify-content: start;
     margin-bottom: -20px;
   }
@@ -943,11 +961,17 @@ Siri section
   .siri-container img {
     max-width: 100px; /* Adjust the max width of the image as needed */
     height: auto;
+    margin-bottom: 25px;
     margin-right: 10px; /* Adjust the spacing between the image and text */
   }
 
   .siri-container h2 {
     font-size: 20px;
+  }
+
+  .siri-p {
+    width: 90%;
+    margin: auto;
   }
 
   /*
@@ -958,7 +982,7 @@ Siri section
 
   .card-container {
     grid-template-columns: repeat(1, 1fr);
-    width: 80%;
+    width: 90%;
   }
 
   /*
@@ -968,7 +992,6 @@ White Background part
 */
 
   .ar {
-    background-color: #f5f5f7;
     padding-top: 40px;
     display: flex;
     flex-direction: column;
@@ -976,7 +999,7 @@ White Background part
   }
 
   .ar-img {
-    width: 70%;
+    width: 90%;
   }
   .ar-title {
     font-size: 60px;
@@ -988,7 +1011,7 @@ White Background part
     font-size: 20px;
     font-weight: bold;
     opacity: 0.4;
-    line-height: 1; /* Adjust line height to reduce the gap */
+    line-height: 1.5; /* Adjust line height to reduce the gap */
   }
 
   .music-details {
@@ -997,13 +1020,12 @@ White Background part
     font-weight: bold;
   }
   .music {
-    background-color: #f5f5f7;
     margin-top: 20px;
     padding-top: 70px;
     padding-bottom: 80px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 20px;
   }
 
@@ -1067,6 +1089,10 @@ which homePod
     opacity: 0.3;
   }
 
+  .info {
+    width: 90%;
+  }
+
   /*
  --------
  Card
@@ -1113,6 +1139,383 @@ Footer
 
   .footer-row {
     grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+}
+
+/*
+---------------
+Tablet Devices Responsive
+---------------
+*/
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-links li {
+    margin: 0 15px;
+    width: auto;
+    text-align: left;
+  }
+
+  /* FullScreen  */
+
+  .fullscreen h1 {
+    font-size: 3rem;
+  }
+
+  /* Features Section */
+  .features {
+    padding: 20px;
+    width: 100%;
+  }
+  .features p {
+    font-size: 1.5rem;
+  }
+
+  /* profound section  */
+
+  .background-section {
+    margin-top: 100px;
+    width: 100%;
+    padding: 20px;
+  }
+  .background-section h3 {
+    font-size: 4rem; /* Adjust text size */
+    margin: 0;
+    padding: 0;
+  }
+
+  /* High-fidelity audio section */
+  .high-fidelity-section {
+    margin-top: 100px;
+    width: 80%;
+  }
+
+  .high-fidelity-section h2 {
+    font-size: 2.5rem;
+    margin-right: 0;
+  }
+
+  .high-fidelity-section p {
+    margin-right: 0;
+  }
+
+  /*
+---------------
+ homePod details section  
+--------------- 
+ */
+
+  .homepod-details-container {
+    width: 80%;
+    margin: auto;
+    flex-direction: row;
+  }
+
+  .homepod-image img {
+    height: 445px !important;
+    width: 352px !important;
+    height: auto;
+    margin: 0;
+  }
+
+  /*
+---------------
+ Sound all around section  
+--------------- 
+ */
+
+  .sound-bg {
+    width: 100%;
+    border: 0 solid transparent;
+    border-radius: 0;
+  }
+  .content-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    flex-direction: row;
+  }
+  .content-container h3 {
+    width: 60%;
+    margin: auto;
+  }
+  .content-container p {
+    font-size: 18px;
+    width: 60%;
+    margin: auto;
+  }
+  /*
+-------------
+image template section
+-------------
+
+*/
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .container img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* 
+-------------
+All your devices section
+--------------
+  */
+
+  .device-background-section {
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .device {
+    margin-top: 150px;
+  }
+  .ar {
+    padding-left: 40px;
+    gap: 10px;
+  }
+  /*
+-------------
+High IQ
+-------------
+*/
+  .high-bg {
+    width: 100%;
+    margin-top: 200px;
+  }
+
+  .high-iq {
+    width: 80%;
+    margin: auto;
+  }
+
+  .high-iq-p {
+    font-size: 18px;
+    margin-left: 30px;
+  }
+
+  .high-text {
+    font-size: 35px;
+    width: 90%;
+    padding-left: 30px;
+    margin: auto;
+    font-weight: bold;
+  }
+
+  .high-text-p2 {
+    font-size: 22px;
+    padding-bottom: 20px;
+    width: 85%;
+  }
+
+  /*
+-------------
+Siri section
+-------------
+*/
+
+  .siri-container {
+    display: flex;
+    width: 70%;
+    padding-left: 30px;
+    margin: auto;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: -10px;
+  }
+
+  .siri-container img {
+    max-width: 120px; /* Adjust the max width of the image as needed */
+    height: auto;
+    margin-bottom: 20px;
+    margin-right: 15px; /* Adjust the spacing between the image and text */
+  }
+
+  .siri-container h2 {
+    font-size: 22px;
+  }
+
+  .siri-p {
+    width: 85%;
+    margin: auto;
+  }
+
+  /*
+ ------------
+ Card  
+ ------------
+ */
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+
+  /*
+------------
+White Background part
+------------
+*/
+
+  .ar {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ar-img {
+    width: 80%;
+  }
+  .ar-title {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1; /* Adjust line height to reduce the gap */
+  }
+
+  .ar-details {
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.6;
+    line-height: 1.5; /* Adjust line height to reduce the gap */
+  }
+
+  .music-details {
+    color: rgb(42, 134, 187);
+    border: none;
+    font-weight: bold;
+  }
+  .music {
+    margin-top: 30px;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /*
+ ------------
+which homePod
+ ------------
+ */
+
+  .homePod {
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .homePod h4 {
+    font-size: 35px;
+  }
+
+  .homePod-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .homePod-card img {
+    margin-top: 20px;
+  }
+  .homePod-card p {
+    margin-bottom: 5px;
+    line-height: 1.2;
+  }
+  .part {
+    line-gap-override: 10px;
+  }
+  .homePod-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+  }
+
+  .homePod-title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .home-title {
+    font-weight: bold;
+  }
+
+  .learn {
+    border: none;
+    background: transparent;
+    color: skyblue;
+  }
+  .home-hr {
+    width: 60%;
+    opacity: 0.4;
+  }
+
+  .info {
+    width: 85%;
+  }
+
+  /*
+ --------
+ Card
+ -----------
+ */
+
+  .others-cards {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  .other-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 180px;
+  }
+
+  .other-card p {
+    line-height: 1;
+    text-align: center;
+  }
+
+  .delievery-pic {
+    height: 60px;
+  }
+
+  /* accessories  */
+
+  .accessories-img {
+    height: 140px;
+  }
+
+  .accessories-card {
+    width: 300px;
+    flex-direction: column;
+  }
+
+  /*
+------------
+Footer
+------------
+*/
+
+  .footer-row {
+    grid-template-columns: repeat(3, 1fr);
     width: 80%;
   }
 }
