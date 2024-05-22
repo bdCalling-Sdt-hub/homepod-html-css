@@ -239,6 +239,7 @@ High-fidelity audio section
  */
 
 .slider {
+  margin: 50px 0px;
   overflow: hidden; /* Hide overflowing content */
 }
 
@@ -581,7 +582,7 @@ which homePod
   line-height: 1.2;
 }
 .part {
-  line-gap-override: 10px;
+  line-height: 1.5;
 }
 .homePod-card {
   display: flex;
@@ -635,7 +636,7 @@ which homePod
 }
 .other-card {
   display: flex;
-  border: "1px solid gray";
+  border: 1px solid gray; /* Corrected the border property */
   justify-content: center;
   align-items: flex-start;
   width: 200px;
@@ -1063,7 +1064,7 @@ which homePod
     line-height: 1.2;
   }
   .part {
-    line-gap-override: 10px;
+    line-height: 1.5;
   }
   .homePod-card {
     display: flex;
@@ -1440,7 +1441,7 @@ which homePod
     line-height: 1.2;
   }
   .part {
-    line-gap-override: 10px;
+    line-height: 1.5;
   }
   .homePod-card {
     display: flex;
