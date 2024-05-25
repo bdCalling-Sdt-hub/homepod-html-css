@@ -658,22 +658,24 @@ which homePod
   justify-content: center;
   align-items: start;
   gap: 70px;
+  padding-top: 50px;
 }
 .other-card {
   display: flex;
   border: 1px solid gray; /* Corrected the border property */
   justify-content: center;
   align-items: flex-start;
-  width: 200px;
+  padding-top: 10px;
+  width: 400px;
 }
 
 .other-card p {
-  line-height: 1;
+  line-height: 1.5;
   text-align: center;
 }
 
 .delievery-pic {
-  height: 60px;
+  height: 40px;
 }
 
 /* accessories  */
@@ -1451,29 +1453,8 @@ which homePod
     font-size: 35px;
   }
 
-  .homePod-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  .homePod-card img {
-    margin-top: 20px;
-  }
-  .homePod-card p {
-    margin-bottom: 5px;
-    line-height: 1.2;
-  }
   .part {
     line-height: 1.5;
-  }
-  .homePod-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
   }
 
   .homePod-title {
@@ -1514,7 +1495,7 @@ which homePod
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 180px;
+    width: 350px;
   }
 
   .other-card p {
@@ -1523,7 +1504,7 @@ which homePod
   }
 
   .delievery-pic {
-    height: 60px;
+    height: 40px;
   }
 
   /* accessories  */
