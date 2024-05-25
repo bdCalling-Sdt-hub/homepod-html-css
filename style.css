@@ -541,6 +541,11 @@ White Background part
   font-weight: bold;
   line-height: 1; /* Adjust line height to reduce the gap */
 }
+.br-title {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1; /* Adjust line height to reduce the gap */
+}
 
 .ar-details {
   font-size: 20px;
@@ -1310,14 +1315,14 @@ All your devices section
 
   .device-background-section {
     background-size: cover;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 150px;
   }
   .device {
-    margin-top: 150px;
+    margin-top: 430px;
   }
   .ar {
     padding-left: 40px;
@@ -1415,6 +1420,12 @@ White Background part
 
   .ar-img {
     width: 80%;
+  }
+  .br-title {
+    margin-left: -180px;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1; /* Adjust line height to reduce the gap */
   }
   .ar-title {
     font-size: 50px;
