@@ -136,7 +136,7 @@ Profound sound section
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh; /* Full screen height */
+  height: 900px; /* Full screen height */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1169,9 +1169,10 @@ which homePod
 
   .accessories-img {
     height: 120px;
+    width: 100%;
   }
   .accessories-title {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: -15px;
     font-weight: bold;
   }
@@ -1179,6 +1180,12 @@ which homePod
   .accessories-card {
     width: 300px;
     flex-direction: column;
+  }
+  .card-title {
+    font-size: 16px;
+    width: 90%;
+    padding-top: 15px;
+    margin: auto;
   }
 
   /*
