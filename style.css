@@ -723,6 +723,7 @@ which homePod
 
 .accessories-card {
   height: 500px;
+
   background-color: #f5f5f7;
   border-radius: 10px;
   /* padding-right: 5px; */
@@ -1269,7 +1270,7 @@ which homePod
   }
 
   .accessories-card {
-    max-width: 120%;
+    width: 120%;
     flex-direction: column;
   }
   .card-title {
@@ -1611,7 +1612,7 @@ White Background part
     margin-top: 30px;
     padding-top: 60px;
     padding-bottom: 70px;
-    padding-left: 120px;
+    padding-left: 220px;
     display: flex;
     flex-direction: row;
     justify-content: center;
