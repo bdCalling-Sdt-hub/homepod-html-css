@@ -4,6 +4,12 @@ body {
   color: aliceblue;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Ensure no element overflows the body */
+* {
+  box-sizing: border-box;
 }
 
 /*
@@ -18,7 +24,7 @@ Navbar section
   align-items: center;
   /* background-color: #333; */
   padding: 10px 20px;
-  width: 70%;
+  max-width: 1200px;
   margin: auto;
   color: white;
   position: relative;
